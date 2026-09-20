@@ -1,0 +1,13 @@
+Frozen estimator metadata
+=========================
+Action dimension: 495
+Sensor count: 12
+History length: 4
+Estimator input dimension: 120
+Hidden layers: (128, 64)
+Activation: relu
+Solver: adam
+Random state: 42
+Training examples: 9900
+Training times: 20
+Targets: Delta_NH4, Delta_SNO

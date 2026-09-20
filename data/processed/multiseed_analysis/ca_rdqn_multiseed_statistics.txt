@@ -1,0 +1,95 @@
+STEP 75 — FINAL CA-RDQN MULTI-SEED STATISTICAL ANALYSIS
+======================================================================
+
+Seeds: [11, 22, 33, 44, 55, 66, 77, 88, 99, 111]
+Number of independent seeds: 10
+Evaluation steps per seed: 478
+Training episodes per seed: 24
+Training steps per seed: 20616
+
+SEED-LEVEL RESULTS
+----------------------------------------------------------------------
+Seed 11: Reward=-0.527029, Actions=152, NH4_RMSE=0.474072, SNO_RMSE=0.241191, NH4_Improvement=10.7524%, SNO_Improvement=12.8542%
+Seed 22: Reward=-0.494853, Actions=157, NH4_RMSE=0.452000, SNO_RMSE=0.238270, NH4_Improvement=14.9077%, SNO_Improvement=13.9093%
+Seed 33: Reward=-0.516600, Actions=147, NH4_RMSE=0.468760, SNO_RMSE=0.239168, NH4_Improvement=11.7524%, SNO_Improvement=13.5849%
+Seed 44: Reward=-0.543889, Actions=129, NH4_RMSE=0.473250, SNO_RMSE=0.250171, NH4_Improvement=10.9072%, SNO_Improvement=9.6096%
+Seed 55: Reward=-0.504889, Actions=137, NH4_RMSE=0.443803, SNO_RMSE=0.248198, NH4_Improvement=16.4508%, SNO_Improvement=10.3225%
+Seed 66: Reward=-0.473099, Actions=164, NH4_RMSE=0.446000, SNO_RMSE=0.230492, NH4_Improvement=16.0372%, SNO_Improvement=16.7198%
+Seed 77: Reward=-0.479674, Actions=164, NH4_RMSE=0.439811, SNO_RMSE=0.237709, NH4_Improvement=17.2023%, SNO_Improvement=14.1122%
+Seed 88: Reward=-0.454045, Actions=144, NH4_RMSE=0.432108, SNO_RMSE=0.228753, NH4_Improvement=18.6525%, SNO_Improvement=17.3483%
+Seed 99: Reward=-0.481819, Actions=141, NH4_RMSE=0.434628, SNO_RMSE=0.241839, NH4_Improvement=18.1781%, SNO_Improvement=12.6198%
+Seed 111: Reward=-0.452169, Actions=160, NH4_RMSE=0.434504, SNO_RMSE=0.226273, NH4_Improvement=18.2014%, SNO_Improvement=18.2441%
+
+MULTI-SEED DESCRIPTIVE STATISTICS
+----------------------------------------------------------------------
+
+Mean evaluation reward
+  n       = 10
+  mean    = -0.492807
+  SD      = 0.030427
+  median  = -0.488336
+  minimum = -0.543889
+  maximum = -0.452169
+  range   = 0.091720
+  CV (%)  = 6.174
+  95% CI  = [-0.514573, -0.471040]
+
+Unique evaluation actions
+  n       = 10
+  mean    = 149.500000
+  SD      = 11.918706
+  median  = 149.500000
+  minimum = 129.000000
+  maximum = 164.000000
+  range   = 35.000000
+  CV (%)  = 7.972
+  95% CI  = [140.973871, 158.026129]
+
+NH4 change RMSE
+  n       = 10
+  mean    = 0.449894
+  SD      = 0.016434
+  median  = 0.444902
+  minimum = 0.432108
+  maximum = 0.474072
+  range   = 0.041964
+  CV (%)  = 3.653
+  95% CI  = [0.438138, 0.461650]
+
+SNO change RMSE
+  n       = 10
+  mean    = 0.238206
+  SD      = 0.007871
+  median  = 0.238719
+  minimum = 0.226273
+  maximum = 0.250171
+  range   = 0.023897
+  CV (%)  = 3.304
+  95% CI  = [0.232576, 0.243837]
+
+NH4 relative improvement (%)
+  n       = 10
+  mean    = 15.304209
+  SD      = 3.093793
+  median  = 16.244004
+  minimum = 10.752434
+  maximum = 18.652502
+  range   = 7.900068
+  CV (%)  = 20.215
+  95% CI  = [13.091043, 17.517375]
+
+SNO relative improvement (%)
+  n       = 10
+  mean    = 13.932471
+  SD      = 2.843804
+  median  = 13.747111
+  minimum = 9.609643
+  maximum = 18.244083
+  range   = 8.634440
+  CV (%)  = 20.411
+  95% CI  = [11.898137, 15.966806]
+
+BASELINES
+----------------------------------------------------------------------
+NH4 zero-change baseline = 0.531187857055
+SNO zero-change baseline = 0.276766823815

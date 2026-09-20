@@ -1,0 +1,92 @@
+[
+  {
+    "day": 1,
+    "observations": 96,
+    "best_nh4_configuration": [
+      "NH4_R2",
+      "NH4_R4",
+      "NH4_R5",
+      "SNO_R3"
+    ],
+    "nh4_rmse": 0.3433632642738482,
+    "best_sno_configuration": [
+      "DO_R3",
+      "NH4_R1",
+      "NH4_R2",
+      "NH4_R3"
+    ],
+    "sno_rmse": 0.1835110603445774
+  },
+  {
+    "day": 2,
+    "observations": 96,
+    "best_nh4_configuration": [
+      "NH4_R2",
+      "NH4_R4",
+      "NH4_R5",
+      "SNO_R3"
+    ],
+    "nh4_rmse": 0.2925091283535176,
+    "best_sno_configuration": [
+      "NH4_R1",
+      "NH4_R2",
+      "NH4_R3",
+      "NH4_R4"
+    ],
+    "sno_rmse": 0.15178987410841907
+  },
+  {
+    "day": 3,
+    "observations": 96,
+    "best_nh4_configuration": [
+      "DO_R2",
+      "NH4_R2",
+      "NH4_R4",
+      "NH4_R5"
+    ],
+    "nh4_rmse": 0.3241183146414938,
+    "best_sno_configuration": [
+      "DO_R4",
+      "NH4_R3",
+      "NH4_R4",
+      "NH4_R5"
+    ],
+    "sno_rmse": 0.18077046361469218
+  },
+  {
+    "day": 4,
+    "observations": 96,
+    "best_nh4_configuration": [
+      "DO_R1",
+      "DO_R2",
+      "DO_R5",
+      "NH4_R5"
+    ],
+    "nh4_rmse": 0.1952478171709879,
+    "best_sno_configuration": [
+      "DO_R1",
+      "DO_R2",
+      "DO_R3",
+      "DO_R5"
+    ],
+    "sno_rmse": 0.09570435483978346
+  },
+  {
+    "day": 5,
+    "observations": 95,
+    "best_nh4_configuration": [
+      "DO_R4",
+      "NH4_R3",
+      "NH4_R4",
+      "NH4_R5"
+    ],
+    "nh4_rmse": 0.2484286988442842,
+    "best_sno_configuration": [
+      "DO_R1",
+      "DO_R3",
+      "DO_R4",
+      "DO_R5"
+    ],
+    "sno_rmse": 0.09366148838132637
+  }
+]

@@ -1,0 +1,43 @@
+﻿.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Local environment/configuration files
+.env
+.env.*
+
+# Local/obsolete research artefacts
+/src/ca_rdqn_training_environment_backup.py
+/data/processed/ca_rdqn_control/ca_rdqn_control_seed42.pt
+
+# Third-party BSM1 benchmark input files
+data/raw/bsm1/

@@ -1,0 +1,78 @@
+﻿project:
+  name: "Constraint-Aware Deep Q-Network for Dynamic Sensor Activation Scheduling in Wastewater Treatment Plants"
+  manuscript_title: "Constraint-Aware Deep Q-Network for Dynamic Sensor Activation Scheduling in Wastewater Treatment Plants: A Multi-Seed Robustness and Ablation Study"
+  version: "1.0.0"
+  random_seeds: [11, 22, 33, 44, 55, 66, 77, 88, 99, 111]
+
+process:
+  benchmark: "BSM1"
+  process_model: "ASM1"
+  biological_reactors: 5
+  decision_interval_min: 15
+  forecast_horizon_min: 30
+
+sensors:
+  total_candidates: 12
+  active_budget: 4
+  feasible_configurations: 495
+
+targets:
+  - "delta_NH4_N"
+  - "delta_SNO"
+
+state:
+  history_length: 4
+  measurements_per_step: 12
+  availability_indicators_per_step: 12
+  observation_dimension: 24
+  recurrent_input_shape: "4 x 24"
+  estimator_input_dimension: 120
+
+ca_rdqn:
+  algorithm: "Double DQN"
+  recurrent_layer: "GRU"
+  gru_hidden_dimension: 128
+  fully_connected_dimension: 64
+  gamma: 0.99
+  learning_rate: 0.001
+  batch_size: 64
+  replay_capacity: 50000
+  warmup_steps: 64
+  target_update_frequency: 500
+  epsilon_start: 1.0
+  epsilon_end: 0.05
+  epsilon_decay_steps: 20000
+  training_episodes: 24
+  gradient_clip_max_norm: 10.0
+  loss: "Huber"
+
+ca_dqn_ablation:
+  recurrent_layer: "None"
+  input_dimension: 24
+  fully_connected_dimensions: [128, 64]
+  gradient_clip_max_norm: 1.0
+  training_episodes: 24
+  evaluation_seeds: [11, 22, 33, 44, 55, 66, 77, 88, 99, 111]
+
+data_split:
+  training_start_index: 4
+  training_end_index: 862
+  evaluation_start_index: 863
+  evaluation_end_index: 1340
+  evaluation_data_used_during_training: false
+
+estimator:
+  type: "Frozen causal estimator"
+  current_configurations_during_training: 495
+  input_dimension: 120
+  hidden_layers: [128, 64]
+  targets: ["delta_NH4_N", "delta_SNO"]
+  historical_measurements_causally_masked: true
+  frozen_before_rl_training: true
+
+reproducibility:
+  final_training_seeds: [11, 22, 33, 44, 55, 66, 77, 88, 99, 111]
+  chronological_split: true
+  evaluation_data_isolation: true
+  trained_models_saved: true
+  seed_results_saved: true

@@ -1,0 +1,26 @@
+BSM1 trajectory export
+=====================
+Model: BSM1OL
+Influent: dryinfluent.csv
+Solver timestep: native BSM1 input timestep
+Decision interval: 15 minutes
+Forecast horizon: 30 minutes
+
+Candidate sensors:
+- DO_R1
+- DO_R2
+- DO_R3
+- DO_R4
+- DO_R5
+- NH4_R1
+- NH4_R2
+- NH4_R3
+- NH4_R4
+- NH4_R5
+- SNO_R3
+- SNO_R5
+
+Targets:
+- Effluent_NH4
+- Effluent_SNO
+- Effluent_TSS

@@ -1,0 +1,14 @@
+Causal Dynamic Estimator
+=======================
+Sensor count: 12
+Action dimension: 495
+History length: 4
+Estimator input dimension: 120
+Hidden layers: 128, 64
+Activation: ReLU
+Output activation: identity
+Training examples: 19800
+Training times per action: 40
+Forecast horizon: 30 minutes
+Random seed: 42
+Historical measurements restricted by activation masks: yes

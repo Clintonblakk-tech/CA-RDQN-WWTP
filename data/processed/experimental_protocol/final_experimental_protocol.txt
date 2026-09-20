@@ -1,0 +1,45 @@
+FINAL CA-RDQN EXPERIMENTAL PROTOCOL
+===================================
+
+sensors: 12
+active_sensors: 4
+actions: 495
+observation_dimension: 24
+history: 4
+gru_hidden: 128
+fc_hidden: 64
+gamma: 0.99
+learning_rate: 0.001
+batch_size: 64
+replay_capacity: 50000
+warmup_steps: 64
+target_update: 500
+epsilon_start: 1.0
+epsilon_end: 0.05
+epsilon_decay: 20000
+decision_minutes: 15
+forecast_minutes: 30
+training_start: 4
+training_end: 862
+evaluation_start: 863
+evaluation_end: 1340
+
+Final seeds: [11, 22, 33, 44, 55, 66, 77, 88, 99, 111]
+
+Method: Constraint-Aware Recurrent Double DQN
+Action constraint: exactly 4 of 12
+Historical measurements: availability constrained
+Evaluation data used during training: no
+TRAINING DURATION
+
+training_episodes: 24
+training_decisions_per_episode: 859
+training_transitions_per_seed: 20616
+
+Training duration is fixed at 24 complete chronological episodes
+per independent random seed. The same training duration is applied
+to all ten final seeds: 11, 22, 33, 44, 55, 66, 77, 88, 99, 111.
+
+This training duration is fixed before inspection of final
+held-out evaluation results and is not selected using evaluation
+performance.

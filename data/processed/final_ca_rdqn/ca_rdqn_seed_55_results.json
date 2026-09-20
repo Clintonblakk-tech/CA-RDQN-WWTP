@@ -1,0 +1,18 @@
+{
+  "seed": 55,
+  "training_start": 4,
+  "training_end": 862,
+  "evaluation_start": 863,
+  "evaluation_end": 1340,
+  "training_episodes": 24,
+  "training_steps": 20616,
+  "evaluation_steps": 478,
+  "unique_evaluation_actions": 137,
+  "mean_evaluation_reward": -0.5048888731261936,
+  "nh4_rmse": 0.4438032024023915,
+  "sno_rmse": 0.24819762701904716,
+  "nh4_zero_change_baseline": 0.5311878570546589,
+  "sno_zero_change_baseline": 0.2767668238145015,
+  "nh4_relative_improvement_percent": 16.45080050150234,
+  "sno_relative_improvement_percent": 10.322478829544401
+}
