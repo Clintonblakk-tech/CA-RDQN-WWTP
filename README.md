@@ -60,6 +60,7 @@ CA-RDQN-WWTP/
 ├── src/
 ├── .gitignore
 ├── README.md
+├── requirements.txt
 └── create_graphical_abstract.py
 ```
 
