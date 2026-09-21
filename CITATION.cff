@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Constraint-Aware Deep Q-Network for Dynamic Sensor Activation Scheduling in Wastewater Treatment Plants: A Multi-Seed Robustness and Ablation Study"
+version: "1.0.0"
+license: "MIT"
+type: software
+abstract: "Wastewater treatment plants rely on continuous process monitoring, yet comprehensive sensor activation can impose measurement, communication and operational constraints. This study investigated dynamic sensor activation scheduling as a constrained sequential decision problem for data-driven wastewater monitoring. Using the Benchmark Simulation Model No. 1 (BSM1), twelve candidate process sensors were considered, with exactly four sensors activated at each 15-min scheduling interval. A constraint-aware recurrent deep Q-network (CA-RDQN) selected among 495 feasible four-sensor combinations, while a frozen causal estimator predicted 30-min changes in effluent ammonium nitrogen (ΔNH4-N) and SNO. Across ten independent training seeds, CA-RDQN achieved mean RMSE values of 0.4499 ± 0.0164 for ΔNH4-N and 0.2382 ± 0.0079 for ΔSNO, corresponding to mean reductions of 15.3% and 13.9%, respectively, relative to zero-change references. Temporal analysis showed that best-performing sensor configurations varied across evaluation windows. Recurrence produced no statistically significant RMSE difference. The results demonstrate the feasibility of dynamically allocating a fixed sensor-activation budget while retaining useful predictive information for wastewater monitoring."
+message: "If you use this software, please cite it as below."
+authors:
+  - given-names: Clinton
+    family-names: Blakk
+  - given-names: Nnamdi
+    family-names: Nwulu
+  - given-names: Esther
+    family-names: Akinlabi
+keywords:
+  - wastewater treatment plants
+  - dynamic sensor scheduling
+  - sensor activation
+  - deep reinforcement learning
+  - deep Q-network
+  - soft sensing
+  - BSM1
