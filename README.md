@@ -1,12 +1,9 @@
 ﻿# CA-RDQN-WWTP
 
-## Constraint-Aware Deep Q-Network for Dynamic Sensor Activation Scheduling in Wastewater Treatment Plants
-
+## CA-RDQN-WWTP: Reproducibility Package for Dynamic Sensor Activation Scheduling in Wastewater Treatment Plants
 This repository contains the code and reproducibility materials for the study:
 
-> **Constraint-Aware Deep Q-Network for Dynamic Sensor Activation Scheduling in Wastewater Treatment Plants: A Multi-Seed Robustness and Ablation Study**
-
-The study investigates dynamic sensor activation scheduling for wastewater treatment monitoring as a constrained sequential decision problem. Using the Benchmark Simulation Model No. 1 (BSM1), twelve candidate process sensors are considered, with exactly four sensors activated at each 15-min scheduling interval. The resulting action space contains 495 feasible four-sensor configurations.
+>This reproducibility package provides the software, processed data, trained model checkpoints, experimental results and analysis scripts supporting the study of constraint-aware dynamic sensor activation scheduling in wastewater treatment plants. The package implements a constraint-aware recurrent deep Q-network (CA-RDQN) and a non-recurrent CA-DQN ablation for selecting exactly four sensors from twelve candidate process sensors at 15-min scheduling intervals using the BSM1 benchmark. It includes the frozen causal estimator used to predict 30-min changes in effluent ΔNH₄-N and SNO, the 495 feasible sensor configurations, multi-seed evaluation outputs, temporal sensor-selection analysis, statistical comparisons, and figure-generation scripts. The repository is intended to support reproducibility, inspection of the experimental workflow and reuse of the implementation. Original BSM1 benchmark input files are not redistributed and should be obtained from the authoritative BSM1 source.
 
 ## Study framework
 
